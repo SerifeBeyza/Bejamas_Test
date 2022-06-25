@@ -26,10 +26,6 @@ public abstract class BasePage {
         Random random = new Random();
         return random.nextInt(max)+min;
     }
-    /*public static WebElement productIndex(String randomNumber){
-        return Driver.get().findElement(By.xpath("//li["+randomNumber+"]//article[1]"));
-    }
-    */
 
 
 }

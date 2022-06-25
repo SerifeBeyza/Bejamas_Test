@@ -59,8 +59,8 @@ public class Pagination_step_Def {
 
 
 
-        //I want to code always running,codun step bıtene kadar devam etmesını ıstıyorum bu yuzden try cath kullandım
-        // bug aıt screen shot cucumber-html reporting de var
+        //I used the try-catch method because I wanted my codes can run until all the step files were finished.
+        //You can see the screenshot of the bug in the cucumber-html reporting section of the target file.
         try{
             assertEquals(products,actualItemNum);
 
