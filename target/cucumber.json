@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5333315600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to main page",
+            "match": {
+              "location": "Bejamas.step_definitions.featured_product_step_def.user_navigates_to_main_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:21:07.290Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3858964500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Bejamas.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify of Pagination",
+        "description": "",
+        "id": "user-should-able-to-land-on-page;verify-of-pagination",
+        "after": [
+          {
+            "result": {
+              "duration": 850656500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Bejamas.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 122928700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user able to see all page number",
+            "match": {
+              "location": "Bejamas.step_definitions.Pagination_step_Def.user_able_to_see_all_page_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 153028700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user able to see six different items on each page",
+            "match": {
+              "location": "Bejamas.step_definitions.Pagination_step_Def.user_able_to_see_six_different_items_on_each_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "User should able to land on page",
+    "description": "",
+    "id": "user-should-able-to-land-on-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SelectedFeatures.feature",
+    "tags": []
+  }
+]
