@@ -1,10 +1,13 @@
-C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\utilities\ConfigurationReader.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\step_definitions\Hooks.java
-C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\utilities\BrowserUtils.java
-C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\runners\CukesRunner.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\pages\BasePage.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\pages\DashboardPage.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\runners\FailedTestRunner.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\step_definitions\Pagination_step_Def.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\utilities\ConfigurationReader.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\utilities\BrowserUtils.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\runners\CukesRunner.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\step_definitions\ProductList_step_def.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\pages\LocatorsPage.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\step_definitions\featured_product_step_def.java
-C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\runners\FailedTestRunner.java
+C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\step_definitions\bos_methodlar.java
 C:\Users\Asus\IdeaProjects\Bejamas_Test\src\test\java\Bejamas\utilities\Driver.java

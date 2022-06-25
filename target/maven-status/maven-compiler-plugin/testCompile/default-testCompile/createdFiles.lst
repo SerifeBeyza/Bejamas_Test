@@ -1,11 +1,14 @@
 Bejamas\utilities\Driver.class
-Bejamas\pages\BasePage.class
 Bejamas\step_definitions\Hooks.class
+Bejamas\step_definitions\ProductList_step_def.class
 Bejamas\pages\LocatorsPage.class
+Bejamas\step_definitions\featured_product_step_def.class
+Bejamas\pages\DashboardPage.class
+Bejamas\pages\BasePage.class
+Bejamas\step_definitions\bos_methodlar.class
 Bejamas\utilities\BrowserUtils$1.class
 Bejamas\runners\CukesRunner.class
 Bejamas\runners\FailedTestRunner.class
-Bejamas\step_definitions\featured_product_step_def.class
+Bejamas\step_definitions\Pagination_step_Def.class
 Bejamas\utilities\BrowserUtils.class
 Bejamas\utilities\ConfigurationReader.class
-Bejamas\pages\DashboardPage.class

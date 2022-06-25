@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>24 Jun 2022, 22:10</td>
+      <td>25 Jun 2022, 22:42</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@wip</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td   class="undefined" >4</td>
-          <td class="total">4</td>
+          <td class="total">5</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="0">0.000</td>
+          <td class="duration" data-value="6469767400">6.469</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,7 +173,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3842476885.html">User should able to land on page</a>
+      <a href="report-feature_4229466451.html">User should able to land on page</a>
     </div>
 
 
@@ -183,14 +183,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">6.469</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Successfully land on the website</span>
+  <span class="name">Verify of Pagination</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -202,11 +202,43 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details  in ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">Bejamas.step_definitions.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">4.811</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -218,15 +250,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given undefined">
-  <span class="keyword indention">Given</span>
-  <span class="name">user navigates to main page</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user able to see all page number</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.191</span>
 
 </div>
 
@@ -249,9 +281,54 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
-  <span class="name">user can able to see featured product</span>
+  <span class="name">user able to see <span class="argument">&quot;6&quot;</span> different items on each page</span>
+
+  <span class="lead-duration duration">3.278</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected:&lt;6&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Bejamas.step_definitions.Pagination_step_Def.user_able_to_see_different_items_on_each_page(Pagination_step_Def.java:59)
+	at &#10045;.user able to see &quot;6&quot; different items on each page(file:///C:/Users/Asus/IdeaProjects/Bejamas_Test/src/test/resources/features/SelectedFeatures.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user navigate to page <span class="argument">&quot;2&quot;</span> on listed product page</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -276,9 +353,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user able to see six different artworks under the category</span>
+  <span class="name">user able to understand which page she is on</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -303,9 +380,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And undefined">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">user able to select which artworks category do you want</span>
+  <span class="name">prev arrow be hidden at page <span class="argument">&quot;1&quot;</span> and next arrow hidden last page <span class="argument">&quot;3&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -333,6 +410,53 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-5" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">Bejamas.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">2.634</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_824478719.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_824478719.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
 
   </div>
 </div>

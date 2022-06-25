@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: User should able to land on page
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.292 s - in User should able to land on page
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.505 s <<< FAILURE! - in User should able to land on page
+Verify of Pagination(User should able to land on page)  Time elapsed: 19.505 s  <<< FAILURE!
+java.lang.AssertionError: expected:<6> but was:<4>
+

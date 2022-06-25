@@ -58,6 +58,9 @@ public class Pagination_step_Def {
         int actualItemNum=items.size();
 
 
+
+        //I want to code always running,codun step bıtene kadar devam etmesını ıstıyorum bu yuzden try cath kullandım
+        // bug aıt screen shot cucumber-html reporting de var
         try{
             assertEquals(products,actualItemNum);
 
