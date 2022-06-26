@@ -5,11 +5,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public abstract class BasePage {
 
-    public BasePage(){ PageFactory.initElements(Driver.get(),this);}
+    public BasePage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
 
     public static WebElement pageNumber8(String pageNumber8) {
@@ -17,15 +21,18 @@ public abstract class BasePage {
 
     }
 
-    public static WebElement items (String itemName){
-        return Driver.get().findElement(By.xpath("//p[normalize-space()='"+itemName+"']"));
+    public static WebElement items(String itemName) {
+        return Driver.get().findElement(By.xpath("//p[normalize-space()='" + itemName + "']"));
     }
 
     //choosing random page number by using this method
-    public static int randomNum(int min,int max){
+    public static int randomNum(int min, int max) {
         Random random = new Random();
-        return random.nextInt(max)+min;
+        return random.nextInt(max) + min;
     }
+
+
+
 
 
 }

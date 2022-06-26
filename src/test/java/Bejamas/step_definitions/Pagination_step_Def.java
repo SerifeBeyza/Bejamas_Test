@@ -1,6 +1,6 @@
 package Bejamas.step_definitions;
 
-import Bejamas.pages.BasePage;
+
 import Bejamas.pages.DashboardPage;
 import Bejamas.pages.LocatorsPage;
 import Bejamas.utilities.BrowserUtils;
@@ -8,13 +8,10 @@ import Bejamas.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+
 
 import static org.junit.Assert.*;
 
@@ -57,6 +54,8 @@ public class Pagination_step_Def {
 
         int actualItemNum=items.size();
 
+        String expectedResult = String.valueOf(actualItemNum);
+
 
 
         //I used the try-catch method because I wanted my codes can run until all the step files were finished.
@@ -66,7 +65,7 @@ public class Pagination_step_Def {
 
         }catch (Error e) {
 
-            System.out.println("There are not 6 different products.");
+            System.out.println("There are 4 different products not 6");
         }
 
 
@@ -126,5 +125,36 @@ public class Pagination_step_Def {
         assertFalse("next arrow can not clickable",locatorsPage.nextArrow.isSelected());
 
     }
+    @Then("user able to see six different icons on each page")
+    public void user_able_to_see_six_different_icons_on_each_page() {
 
-}
+        //create a dummy variable
+        String actualResult = "";
+
+            // create a list for identify elements in pagination icons number with findElements
+            List<WebElement> paginationIcons = Driver.get().findElements(By.xpath("//ol[@class='PaginationIndicatorstyle__Ol-urm45v-0 hRXIFn']"));
+
+            //iterate through pagination Icons list and get the actual result
+            for (WebElement i: paginationIcons) {
+                actualResult = i.getText();
+            }
+            //expected result
+              int n = 1;
+
+                     while( n <= 6 ){
+                       n++;
+                     }
+
+                     //int convert to string
+              String expectedResult = String.valueOf(n);
+
+                     //verify the actual and expected result are the same
+               assertNotEquals(actualResult,expectedResult);
+
+        }
+
+    }
+
+
+
+
